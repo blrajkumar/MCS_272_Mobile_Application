@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Le Adagio</string>
+    <string name="jazz">Jazz</string>
+    <string name="pop">Pop</string>
+    <string name="rock">Rock</string>
+    <string name="disco">Disco</string>
+    <string name="one">0.25</string>
+    <string name="two">-0.25</string>
+
+</resources>

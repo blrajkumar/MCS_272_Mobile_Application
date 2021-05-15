@@ -1,0 +1,18 @@
+<?xml version ="1.0" encoding ="utf-8"?><!--  Learn More about how to use App Actions: https://developer.android.com/guide/actions/index.html -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item  android:id="@+id/view_item"
+        android:title="View"
+        app:showAsAction="always"
+        android:icon="@android:drawable/ic_menu_view"/>
+    <item  android:id="@+id/share_item"
+        android:title="Share"
+        app:showAsAction="ifRoom"
+        android:icon="@android:drawable/ic_menu_share"/>
+    <item android:id="@+id/settings_item"
+        android:title="Settings" />
+    <item android:id="@+id/help_item"
+        android:title="Help" />
+    <item android:id="@+id/logout_item"
+        android:title="Logout" />
+</menu>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include layout="@layout/main_toobar"/>
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="398dp"
+            android:layout_height="29dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="30dp"
+            android:gravity="fill_vertical"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="22sp" />
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/gifImageView"
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:src="@drawable/health"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.469" />
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="398dp"
+            android:layout_height="29dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="30dp"
+            android:gravity="fill_vertical"
+            android:text="ABOUT US"
+            android:textColor="#000000"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="393dp"
+            android:layout_height="282dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="0dp"
+            android:gravity="fill_vertical"
+            android:justificationMode="inter_word"
+            android:text="CHRIST (Deemed to be University), a premier educational institution, is an academic fraternity of individuals dedicated to the motto of 'EXCELLENCE AND SERVICE.'  We strive to reach out to the star of perfection through an earnest academic pursuit for 'excellence,' and our efforts blossom into 'service' through our creative and empathetic involvement in the society to transform it."
+            android:textColor="#000000"
+            android:textSize="21.5dp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@android:color/white">
+        <include layout="@layout/main_nav_drawer"/>
+    </RelativeLayout>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="154dp"
+            android:fontFamily="@font/aclonica"
+            android:gravity="center"
+            android:text="Event Registeration"
+            android:textColor="#6532CC"
+            android:textSize="35sp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="78dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/fname"
+                    style="@style/Widget.AppCompat.AutoCompleteTextView"
+                    android:layout_width="180dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/textview_border"
+                    android:backgroundTintMode="src_in"
+                    android:ems="10"
+                    android:hint="  First Name"
+                    android:inputType="textPersonName"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:id="@+id/lname"
+                    style="@style/Widget.AppCompat.AutoCompleteTextView"
+                    android:layout_width="175dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/textview_border"
+                    android:backgroundTintMode="src_in"
+                    android:ems="10"
+                    android:hint="  Last Name"
+                    android:inputType="textPersonName"
+                    android:textSize="24sp" />
+            </TableRow>
+
+        </TableLayout>
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="375dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/textview_border"
+            android:ems="10"
+            android:gravity="fill_vertical"
+            android:hint="  Email Address"
+            android:inputType="textEmailAddress"
+            android:textSize="24dp" />
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="375dp"
+            android:layout_height="66dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/textview_border"
+            android:ems="10"
+            android:hint="  Mobile Number"
+            android:inputType="phone"
+            android:textSize="24dp" />
+
+        <EditText
+            android:id="@+id/college"
+            android:layout_width="374dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/textview_border"
+            android:ems="10"
+            android:hint="  College Name"
+            android:inputType="textPersonName"
+            android:textSize="24dp" />
+
+        <CheckBox
+            android:id="@+id/terms"
+            android:layout_width="371dp"
+            android:layout_height="71dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:text="I accept to the terms n condition"
+            android:textColor="#AB000000"
+            android:textSize="23sp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <Button
+                    android:id="@+id/submit"
+                    android:layout_width="175dp"
+                    android:layout_height="86dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="#000000"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Submit"
+                    android:textSize="26sp" />
+
+                <Button
+                    android:id="@+id/clear"
+                    android:layout_width="175dp"
+                    android:layout_height="86dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="#B80101"
+                    android:fontFamily="sans-serif-black"
+                    android:onClick="clear_btn"
+                    android:text="Clear"
+                    android:textSize="26sp" />
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/actor</item>
+        <item>@font/architects_daughter</item>
+        <item>@font/biryani_bold</item>
+        <item>@font/caveat_bold</item>
+        <item>@font/cedarville_cursive</item>
+        <item>@font/cherry_cream_soda</item>
+        <item>@font/eater</item>
+        <item>@font/fontdiner_swanky</item>
+        <item>@font/nosifer</item>
+    </array>
+</resources>

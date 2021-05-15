@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CartActivity">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="407dp"
+        android:layout_height="251dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/donut" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="408dp"
+        android:layout_height="96dp"
+        android:gravity="center"
+        android:text="Cart Items"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="36sp"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/cart"
+        android:layout_width="408dp"
+        android:layout_height="274dp"
+        android:gravity="center"
+        android:text="Empty"
+        android:textSize="22dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="217dp"
+        android:layout_height="49dp"
+        android:background="@color/cardview_dark_background"
+        android:onClick="order"
+        android:text="Place the order"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cart" />
+</android.support.constraint.ConstraintLayout>

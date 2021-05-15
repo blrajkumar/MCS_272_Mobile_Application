@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScoreBoard">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/brd" />
+
+    <TextView
+        android:id="@+id/texttm"
+        android:layout_width="210dp"
+        android:layout_height="103dp"
+        android:layout_below="@+id/text"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="-26dp"
+        android:gravity="center"
+        android:onClick="hitme"
+        android:padding="4dp"
+        android:text="Team Score : "
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/plrtxt"
+        android:layout_width="210dp"
+        android:layout_height="103dp"
+        android:layout_below="@+id/text"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="68dp"
+        android:gravity="center"
+        android:onClick="hitme"
+        android:padding="4dp"
+        android:text="Player :"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="400dp"
+        android:layout_height="68dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="23dp"
+        android:layout_marginBottom="16sp"
+        android:fontFamily="@font/bubblegum_sans"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="ScoreBoard"
+        android:textColor="#FFFFA0"
+        android:textSize="58sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/scr"
+        android:layout_width="163dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="16sp"
+        android:fontFamily="@font/nosifer"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/plrscr"
+        android:layout_width="163dp"
+        android:layout_height="118dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="172dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="16sp"
+        android:fontFamily="@font/nosifer"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:textStyle="bold|italic" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/rungif"
+        android:layout_width="213dp"
+        android:layout_height="381dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-1dp"
+        android:src="@drawable/mtchscr"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.497" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="192dp"
+        android:layout_height="370dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="-2dp"
+        android:layout_marginBottom="3dp"
+        android:onClick="hitme"
+        app:srcCompat="@drawable/batme" />
+
+    <TextView
+        android:id="@+id/htme"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="-11dp"
+        android:layout_marginBottom="73dp"
+        android:gravity="center"
+        android:onClick="hitme"
+        android:padding="4dp"
+        android:text="Hit me"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold|italic" />
+</RelativeLayout>

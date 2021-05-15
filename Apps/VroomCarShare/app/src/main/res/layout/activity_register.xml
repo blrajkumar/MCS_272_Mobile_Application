@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-29dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="63dp"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="36sp" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:fontFamily="cursive"
+                android:gravity="center"
+                android:text="Register Form"
+                android:textColor="#000000"
+                android:textSize="50sp" />
+
+            <EditText
+                android:id="@+id/fname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="30dp"
+                android:ems="10"
+                android:hint="Firstname"
+                android:inputType="textPersonName"
+                android:textSize="26sp" />
+
+            <EditText
+                android:id="@+id/lname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="30dp"
+                android:ems="10"
+                android:hint="Lastname"
+                android:inputType="textPersonName"
+                android:textSize="26sp" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="30dp"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textPersonName"
+                android:textSize="26sp" />
+
+            <EditText
+                android:id="@+id/phnumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="30dp"
+                android:ems="10"
+                android:hint="Phone Number"
+                android:inputType="textPersonName"
+                android:textSize="26sp" />
+
+            <EditText
+                android:id="@+id/street"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="30dp"
+                android:ems="10"
+                android:hint="University Name"
+                android:inputType="textPersonName"
+                android:textSize="26sp" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="64dp">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp">
+
+                    <Button
+                        android:id="@+id/clear"
+                        android:layout_width="105dp"
+                        android:layout_height="65dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="30dp"
+                        android:backgroundTint="#1E88E5"
+                        android:fontFamily="sans-serif-black"
+                        android:onClick="clrbtn"
+                        android:text="Clear"
+                        android:textSize="16sp" />
+
+                    <Button
+                        android:id="@+id/save"
+                        android:layout_width="105dp"
+                        android:layout_height="65dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="30dp"
+                        android:backgroundTint="#1E88E5"
+                        android:fontFamily="sans-serif-black"
+                        android:onClick="savebtm"
+                        android:text="Save"
+                        android:textSize="16sp" />
+
+                    <Button
+                        android:id="@+id/Retrieve"
+                        android:layout_width="105dp"
+                        android:layout_height="65dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="30dp"
+                        android:backgroundTint="#1E88E5"
+                        android:fontFamily="sans-serif-black"
+                        android:onClick="ftchbtn"
+                        android:text="Fetch"
+                        android:textSize="16sp" />
+                </TableRow>
+
+            </TableLayout>
+
+            <Button
+                android:id="@+id/register"
+                android:layout_width="367dp"
+                android:layout_height="64dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/customroundcorner"
+                android:backgroundTint="@color/black"
+                android:fontFamily="sans-serif-black"
+                android:text="Submit"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
